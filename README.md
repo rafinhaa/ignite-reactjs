@@ -17,16 +17,16 @@
 
 Repositório onde se encontra todos os projetos desenvolvidos na trilha de ReactJS do Ignite da Rocketseat.
 
-# :pushpin: Conteúdo
+## :pushpin: Conteúdo
 - [Projetos](#rocket-projetos)
   - [Chapter I](#one-chapter-i)
     - [Github Explorer](#github-explorer)
 
-# :rocket: Projetos
+## :rocket: Projetos
 
-## :one: Chapter I
+### :one: Chapter I
 
-### Github Explorer
+#### Github Explorer
 
 <p align="center">
   <a href="https://github.com/rafinhaa/ignite-reactjs/tree/main/01-github-explorer">
