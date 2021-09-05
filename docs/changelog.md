@@ -3,3 +3,4 @@
 - Terminado a aula 02 - Conceitos importantes - 02 - Propriedades no React
 ##### 05/04/2021
 - Terminado a aula 02 - Conceitos importantes - 03 - Estado do componente
+- Terminado a aula 02 - Conceitos importantes - 04 - Estado do componente
