@@ -9,3 +9,4 @@
 - Terminado a aula 03 - Chamadas HTTP - 01 - Estilização de listagem
 ##### 07/09/2021
 - Terminado a aula 03 - Chamadas HTTP - 02 - Utilizando o useEffect
+- Terminado a aula 03 - Chamadas HTTP - 03 - Listando repositorios

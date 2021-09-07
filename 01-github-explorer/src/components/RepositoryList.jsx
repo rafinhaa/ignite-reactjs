@@ -16,9 +16,11 @@ export function RepositoryList(){
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
             <ul>
-                <RepositoryItem repository="Oi"/> { /* Chamando o componente RepositoryItem e passando o parâmetro repository como "uniform" */}
-                <RepositoryItem/>
-                <RepositoryItem/>
+                { 
+                    repositories.map(
+	                    repository => <RepositoryItem key={repository.id} repository={repository} /> // Cada repositório é um item do array de repositórios
+	                )
+                } {/* Percorrendo o array de repositórios e renderizando cada um deles */}
             </ul>   
         </section>
     );
