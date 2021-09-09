@@ -10,3 +10,5 @@
 ##### 07/09/2021
 - Terminado a aula 03 - Chamadas HTTP - 02 - Utilizando o useEffect
 - Terminado a aula 03 - Chamadas HTTP - 03 - Listando repositorios
+##### 09/09/2021
+- Terminado a aula 01 - Usando Typescript - Fundamentos do TypeScript
