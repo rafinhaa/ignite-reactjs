@@ -15,5 +15,5 @@
 ##### 10/09/2021
 - Terminado a aula 02 - Usando Typescript - TypeScript no ReactJS
 ##### 11/09/2021
-- Terminado a aula 02 - Usando Typescript - Componentes com TypeScript
-
+- Terminado a aula 03 - Usando Typescript - Componentes com TypeScript
+- Terminado a aula 01 - Finalizando a aplicação - Utilizando React DevTools
