@@ -17,3 +17,4 @@
 ##### 11/09/2021
 - Terminado a aula 03 - Usando Typescript - Componentes com TypeScript
 - Terminado a aula 01 - Finalizando a aplicação - Utilizando React DevTools
+- Terminado a aula 02 - Finalizando a aplicação - Finalização do módulo
