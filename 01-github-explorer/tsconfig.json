@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {                      
+    "lib": ["dom","dom.iterable","esnext"],       // Especifica quais as bibliotecas que o TS vai usar
+    "jsx": "react-jsx",                           // Indica que o TS vai usar o JSX    
+    "moduleResolution": "node", 
+    "resolveJsonModule": true,                    // Adiciona a possibilidade de importar arquivos JSON
+	  "allowJs": true,                              // Permite que o TS compilador ou transpile para javascript
+    "noEmit": true,                               // Não gera o arquivo .js
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                               // Indica que o TS vai usar o strict mode
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+	},
+"include": ["src"],                              // Indica que o TS vai compilar todos os arquivos que estão dentro da pasta src
+}

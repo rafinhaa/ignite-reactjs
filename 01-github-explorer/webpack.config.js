@@ -7,13 +7,13 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 module.exports = {
     mode: isDevelopment ? 'development' : 'production',
     devtool: isDevelopment ? 'eval-source-map' : 'source-map', //
-    entry: path.resolve(__dirname,'src','index.jsx'), //Arquivo principal da aplicação
+    entry: path.resolve(__dirname,'src','index.tsx'), //Arquivo principal da aplicação
     output: {
         path: path.resolve(__dirname,'dist'), //Pasta onde será gerado o arquivo bundle.js
         filename: 'bundle.js' //Nome do arquivo bundle.js
     },
     resolve:{
-        extensions: ['.js','.jsx'] //Extensões que serão utilizadas para encontrar os arquivos
+        extensions: ['.js','.jsx','.tsx','.ts'] //Extensões que serão utilizadas para encontrar os arquivos
     },
     devServer:{
         static: path.resolve(__dirname, 'public'), //Pasta onde fica o arquivo HTML (conteúdo estatico)
@@ -31,7 +31,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/, //Expressão regular para encontrar arquivos js ou jsx
+                test: /\.(j|t)sx$/, //Expressão regular para encontrar arquivos js ou jsx
                 exclude: /node_modules/, //Excluir arquivos de node_modules
                 use: {
                     loader: 'babel-loader', //Babel-loader é responsável por converter o código jsx para js
