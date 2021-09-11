@@ -12,3 +12,8 @@
 - Terminado a aula 03 - Chamadas HTTP - 03 - Listando repositorios
 ##### 09/09/2021
 - Terminado a aula 01 - Usando Typescript - Fundamentos do TypeScript
+##### 10/09/2021
+- Terminado a aula 02 - Usando Typescript - TypeScript no ReactJS
+##### 11/09/2021
+- Terminado a aula 02 - Usando Typescript - Componentes com TypeScript
+
