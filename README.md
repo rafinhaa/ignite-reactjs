@@ -21,15 +21,25 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 - [Projetos](#rocket-projetos)
   - [Chapter I](#one-chapter-i)
     - [Github Explorer](#github-explorer)
+ - [Desafios](#rocket-projetos)
+  - [Chapter I](#one-chapter-i)
+    - [Watchme](#github-explorer)
 
 ## :rocket: Projetos
-
 ### :one: Chapter I
-
 #### Github Explorer
 
 <p align="center">
   <a href="https://github.com/rafinhaa/ignite-reactjs/tree/main/01-github-explorer">
+     <img src="https://raw.githubusercontent.com/rafinhaa/ignite-reactjs/4c7f87360221a18410d3c19434bf6bef8afc3501/01-github-explorer/assets/img/logo.svg" alt="Github Explorer" width="280"/>
+   </a>
+</p>
+
+## :rocket: Desafios
+### :one: Chapter I
+#### Github Watchme
+<p align="center">
+  <a href="https://github.com/rafinhaa/ignite-desafio-02">
      <img src="https://raw.githubusercontent.com/rafinhaa/ignite-reactjs/4c7f87360221a18410d3c19434bf6bef8afc3501/01-github-explorer/assets/img/logo.svg" alt="Github Explorer" width="280"/>
    </a>
 </p>
