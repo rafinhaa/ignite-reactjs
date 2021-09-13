@@ -41,12 +41,12 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 ## 🚀 Desafios
 ### Chapter I
 <p align="center">
-  <a href="https://github.com/rafinhaa/ignite-desafio-01">
+  <a href="https://github.com/rafinhaa/ignite-reactjs-desafio-01">
      <img src="docs/images/logos/desafio-to.do.svg" alt="to.do" width="280"/>
    </a>
 </p>
 <p align="center">
-  <a href="https://github.com/rafinhaa/ignite-desafio-02">
+  <a href="https://github.com/rafinhaa/ignite-reactjs-desafio-02">
      <img src="docs/images/logos/desafio-watchme.svg" alt="WatchMe" width="280"/>
    </a>
 </p>
