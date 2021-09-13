@@ -19,17 +19,17 @@
 Repositório onde se encontra todos os projetos desenvolvidos na trilha de ReactJS do Ignite da Rocketseat.
 
 ### 📌 Conteúdo
-- [Projetos](#rocket-projetos)
-  - [Chapter I](#one-chapter-i)
+- [Projetos](#-projetos)
+  - [Chapter I](#chapter-i)
     - [Github Explorer](#github-explorer)
     
 
-- [Desafios](#rocket-desafios)
+- [Desafios](#-desafios)
   - [Chapter I](#one-chapter-i)
     - [Watchme](#github-explorer)
 
 ## 🚀 Projetos
-### 1️⃣ Chapter I
+### Chapter I
 #### Github Explorer
 
 <p align="center">
@@ -39,7 +39,7 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 </p>
 
 ## 🚀 Desafios
-### 1️⃣ Chapter I
+### Chapter I
 <p align="center">
   <a href="https://github.com/rafinhaa/ignite-desafio-01">
      <img src="docs/images/logos/desafio-to.do.svg" alt="to.do" width="280"/>
