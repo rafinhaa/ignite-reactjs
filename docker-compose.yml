@@ -7,7 +7,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./01-github-explorer:/srv/meu-app
+      - ./02-dtmoney:/srv/meu-app
     ports:
       - 3000:3000
-    command: "yarn dev"
+    command: "yarn start"
