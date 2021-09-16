@@ -23,4 +23,5 @@
 - Terminado a aula 02 - Estrutura da aplicação - Estrutura com create-react-app
 ##### 16/09/2021
 - Terminado a aula 03 - Estrutura da aplicação - Exportando assets do Figma
-- Terminado a aula 03 - Estrutura da aplicação - Instalando Styled Components
+- Terminado a aula 04 - Estrutura da aplicação - Instalando Styled Components
+- Terminado a aula 05 - Estrutura da aplicação - Criando estilos globais
