@@ -25,3 +25,4 @@
 - Terminado a aula 03 - Estrutura da aplicação - Exportando assets do Figma
 - Terminado a aula 04 - Estrutura da aplicação - Instalando Styled Components
 - Terminado a aula 05 - Estrutura da aplicação - Criando estilos globais
+- Terminado a aula 06 - Estrutura da aplicação - Fontes do Google Fonts

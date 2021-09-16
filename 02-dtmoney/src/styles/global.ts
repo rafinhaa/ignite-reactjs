@@ -15,6 +15,14 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    body, input, textarea, button { /** Definindo a fonte padrão */
+        font-family: 'Poppins', sans-serif; /** Caso a primeira fonte vai usar uma fonte padrao do sistema operacional */
+        font-weight: 400;
+    } 
+    h1, h2, h3, h4, h5, h6, strong { /** Fontes de negrito */
+        font-weight: 600;
+    }
+
     /** Fonte size para desktop inicia em 16px */
     html { /**  Define o tamanho da pagina */
         @media (max-width: 1080px) { /** Quando a pagina for ate 1080px de largura */
