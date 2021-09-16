@@ -21,3 +21,5 @@
 ##### 14/09/2021
 - Terminado a aula 01 - Estrutura da aplicação - Introdução do módulo
 - Terminado a aula 02 - Estrutura da aplicação - Estrutura com create-react-app
+##### 16/09/2021
+- Terminado a aula 03 - Estrutura da aplicação - Exportando assets do Figma
