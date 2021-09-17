@@ -65,8 +65,20 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 576px; /* Se tiver com no maximo 576px para de aumentar */
         background: var(--background);
         padding: 3rem;
-        position: relative;
+        position: relative; /** O botão de fechar vai ser do tipo relative  */
         border-radius: 0.25rem;
+    }
 
+    .react-modal-close {
+        position: absolute;
+        border: 0;
+        background: none;
+        top: 1.5rem;
+        right: 1.5rem;
+        
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(0.7);
+        }
     }
 `;

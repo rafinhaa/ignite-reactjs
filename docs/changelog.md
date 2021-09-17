@@ -36,3 +36,4 @@
 - Terminado a aula 01 - Modal & Forms - Configurando o modal de criação
 - Terminado a aula 02 - Modal & Forms - Componente NewTransactionModal
 - Terminado a aula 03 - Modal & Forms - Estrutura do formulário
+- Terminado a aula 04 - Modal & Forms - Estilizadn o Modal
