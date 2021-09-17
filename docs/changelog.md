@@ -28,3 +28,4 @@
 - Terminado a aula 06 - Estrutura da aplicação - Fontes do Google Fonts
 ##### 17/09/2021
 - Terminado a aula 01 - Componentização - Componente Header
+- Terminado a aula 02 - Componentização - Componente Summary

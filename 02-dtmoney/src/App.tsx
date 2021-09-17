@@ -1,3 +1,4 @@
+import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/global"; // Importando o estilo global
 
@@ -5,7 +6,7 @@ export function App() { //permite que o componente seja exportado com o mesmo no
   return (
     <> {/* O React precisa de um elemento raiz, no caso, o elemento <> </>  que é uma tag fragment */}
       <Header/>
-      <h1>Hello World</h1>
+      <Dashboard/>
       <GlobalStyle/> {/* Usando o estilo global */}
     </>
   );
