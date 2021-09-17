@@ -34,4 +34,5 @@
 - Terminado a aula 02 - Consumindo API - Configurando o MirageJS
 - Terminado a aula 03 - Consumindo API - Configurando o Axios
 - Terminado a aula 01 - Modal & Forms - Configurando o modal de criação
-- Terminado a aula 01 - Modal & Forms - Componente NewTransactionModal
+- Terminado a aula 02 - Modal & Forms - Componente NewTransactionModal
+- Terminado a aula 03 - Modal & Forms - Estrutura do formulário
