@@ -26,3 +26,5 @@
 - Terminado a aula 04 - Estrutura da aplicação - Instalando Styled Components
 - Terminado a aula 05 - Estrutura da aplicação - Criando estilos globais
 - Terminado a aula 06 - Estrutura da aplicação - Fontes do Google Fonts
+##### 17/09/2021
+- Terminado a aula 01 - Componentização - Componente Header
