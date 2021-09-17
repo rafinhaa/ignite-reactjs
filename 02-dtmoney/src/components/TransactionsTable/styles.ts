@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-//Componente que renderiza o Dashboard
 export const Container = styled.main`
     margin-top: 4rem;
     table {

@@ -30,3 +30,4 @@
 - Terminado a aula 01 - Componentização - Componente Header
 - Terminado a aula 02 - Componentização - Componente Summary
 - Terminado a aula 03 - Componentização - TransactionsTable
+- Terminado a aula 01 - Consumindo API - Criando frontend sem backend
