@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { darken } from "polished";  // Manipulação de cores através de funções
+
 
 export const Container = styled.form`
     h2 {
@@ -40,4 +42,39 @@ export const Container = styled.form`
             filter: brightness(0.9); /* Diminuir a luminosidade em 90% */
         }
     }    
+`;
+
+export const TransactionTypeContainer = styled.div`
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
+
+    button {
+        height: 4rem;
+        border: 1px solid #d7d7d7;
+        border-radius: 0.25rem;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: border-color 0.2s;
+
+        &:hover {
+            border-color: ${darken(0.1, '#d7d7d7')};
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 1rem;
+            margin-left: 0.1rem;
+            color: var(--text-title);
+        }
+    }
 `;
