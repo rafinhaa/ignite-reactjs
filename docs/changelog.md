@@ -42,4 +42,5 @@
 ##### 21/09/2021
 - Terminado a aula 06 - Modal & Forms - Funcionamento dos Botões
 - Terminado a aula 07 - Modal & Forms - Cores dos botões
+- Terminado a aula 08 - Modal & Forms - Salvando os dados do form
 
