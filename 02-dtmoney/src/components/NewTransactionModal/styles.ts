@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darken } from "polished";  // Manipulação de cores através de funções
+import { darken, transparentize } from "polished";  // Manipulação de cores através de funções
 
 
 export const Container = styled.form`
@@ -53,13 +53,26 @@ export const TransactionTypeContainer = styled.div`
 
 interface RadioBoxProps { // Criação de propriedades para o RadioBox
     isActive: boolean;
+    activeColor: 'green' | 'red'; // Criação de propriedade para a cor do botão
 }
+
+const colors = { // É criado dessa forma porque como é utilizado no JS, o JS não consegue acessar variaveis de CSS
+    green: '#33cc95',
+    red: '#e52e4D',
+}
+
 // O RadioBox recebe a propriedade isActive e se ela for true, o background-color mudará de cor
 export const RadioBox = styled.div<RadioBoxProps>`
     height: 4rem;
     border: 1px solid #d7d7d7;
     border-radius: 0.25rem;
-    background: ${ (props) => props.isActive ? '#eee' : 'transparent'}; // Interpolação '$ + chaves' para acessar propriedades
+    background: ${ (props) => props.isActive ? 
+            transparentize(
+                0.9, // Transparencia de 90%
+                colors[props.activeColor] // activeColor Retorna 'green' ou 'red', colors é um objeto que tem 'green' ou 'red', quando passado a propriedade activeColor, o valor retornado será o valor de 'green' ou 'red' que está dentro de colors
+                )
+        : 
+            'transparent'}; // Interpolação '$ + chaves' para acessar propriedades
     display: flex;
     align-items: center;
     justify-content: center;

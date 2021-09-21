@@ -27,11 +27,16 @@ export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProp
                     <input placeholder="Título" />
                     <input type='number' placeholder="Valor" />
                     <TransactionTypeContainer> 
-                        <RadioBox onClick={() => {setType('deposit')}} isActive={type==='deposit'}> { /* isActive é um boolean que diz se o radio está selecionado ou não */}
+                        <RadioBox onClick={() => {setType('deposit')}} 
+                        isActive={type==='deposit'}
+                        activeColor="green"
+                         > { /* isActive é um boolean que diz se o radio está selecionado ou não */}
                             <span>Entrada</span>
                             <img src={incomeImg} alt="Entrada" />
                         </RadioBox>
-                        <RadioBox onClick={() => {setType('withdraw')}} isActive={type==='withdraw'}>
+                        <RadioBox onClick={() => {setType('withdraw')}} isActive={type==='withdraw'} 
+                        activeColor="red"
+                        >
                             <span>Saída</span>
                             <img src={outcomeImg} alt="Saída" />
                         </RadioBox>

@@ -41,4 +41,5 @@
 - Terminado a aula 05 - Modal & Forms - Criando botões de tipo
 ##### 21/09/2021
 - Terminado a aula 06 - Modal & Forms - Funcionamento dos Botões
+- Terminado a aula 07 - Modal & Forms - Cores dos botões
 
