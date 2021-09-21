@@ -4,6 +4,7 @@ import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import { FormEvent, useState } from 'react';
+import { api } from '../../services/api';
 
 interface NewTransactionModalProps {
     isOpen: boolean;
@@ -21,12 +22,15 @@ export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProp
     // O onSubmit recebe como parâmetro o evento do form, que vem com as informações do form
     function handleCreateNewTransaction(event: FormEvent){
         event.preventDefault();
-        console.log({
+        //Salvando os dados do form na variável data
+        const data ={
             title,
             value,
             category,
             type,
-        });
+        };
+        //Fazendo a requisição para a API
+        api.post('transactions', data);
     }
 
     return (
@@ -49,14 +53,14 @@ export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProp
                     <input value={value} onChange={ event => setValue(event.target.valueAsNumber) } type='number' placeholder="Valor" />
                     <TransactionTypeContainer> 
                         <RadioBox onClick={() => {setType('deposit')}} 
-                        isActive={type==='deposit'}
-                        activeColor="green"
-                         > { /* isActive é um boolean que diz se o radio está selecionado ou não */}
+                            isActive={type==='deposit'}
+                            activeColor="green"
+                        > { /* isActive é um boolean que diz se o radio está selecionado ou não */}
                             <span>Entrada</span>
                             <img src={incomeImg} alt="Entrada" />
                         </RadioBox>
                         <RadioBox onClick={() => {setType('withdraw')}} isActive={type==='withdraw'} 
-                        activeColor="red"
+                            activeColor="red"
                         >
                             <span>Saída</span>
                             <img src={outcomeImg} alt="Saída" />

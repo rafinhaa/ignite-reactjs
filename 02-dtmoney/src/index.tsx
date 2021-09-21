@@ -1,19 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createServer} from 'miragejs'; // Cria um servidor de API fake
+import { createServer, Model} from 'miragejs'; // Cria um servidor de API fake
 import {App} from './App';
 
 createServer ({
+  // Tabela de dados
+  models: {
+    // Nome da tabela
+    transaction: Model,  
+  },
   routes(){ // Cria as rotas
     this.namespace = 'api'; // Define o namespace da API
+
     this.get('/transactions', () => { // Cria a rota transactions do tipo get e retorna um array de objetos
-      return [
-        {id: 1, title:'Transaction',createAt: new Date(),category: 'Lazer', type: 'deposit', amount: '30'},
-        {id: 2, title:'Transaction',createAt: new Date(),category: 'Alimentação', type: 'deposit', amount: '50'},
-        {id: 3, title:'Transaction',createAt: new Date(),category: 'Aluguel', type: 'withdraw', amount: '200'},
-        {id: 4, title:'Transaction',createAt: new Date(),category: 'Salário', type: 'withdraw', amount: '3000'},
-        {id: 5, title:'Transaction',createAt: new Date(),category: 'Vendas', type: 'withdraw', amount: '2000'},
-      ]
+      return this.schema.all('transaction'); // Retorna todos os objetos da tabela transaction
+    })
+    
+    this.post('/transactions', (schema, request) => { //schema é o banco de dados e request é o request do post
+      const data = JSON.parse(request.requestBody); // Pega o corpo da requisição em texto e converte para JSON
+      //Primeiro parametro é o nome da tabela e o segundo é o objeto que será inserido
+      return schema.create('transaction',data); // Cria um novo objeto no banco de dados
     })
   }
 });
