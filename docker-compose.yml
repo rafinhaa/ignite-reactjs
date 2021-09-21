@@ -3,6 +3,7 @@ services:
   node:
     image: "node"
     user: "node"
+    container_name: "node"
     working_dir: /srv/meu-app
     environment:
       - NODE_ENV=development
