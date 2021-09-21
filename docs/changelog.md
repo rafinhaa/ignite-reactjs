@@ -39,4 +39,6 @@
 - Terminado a aula 04 - Modal & Forms - Estilizando o Modal
 ##### 20/09/2021
 - Terminado a aula 05 - Modal & Forms - Criando botões de tipo
+##### 21/09/2021
+- Terminado a aula 06 - Modal & Forms - Funcionamento dos Botões
 
