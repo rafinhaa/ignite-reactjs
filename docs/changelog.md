@@ -44,4 +44,5 @@
 - Terminado a aula 07 - Modal & Forms - Cores dos botões
 - Terminado a aula 08 - Modal & Forms - Salvando os dados do form
 - Terminado a aula 09 - Modal & Forms - Inserindo a transação na API
+- Terminado a aula 10 - Modal & Forms - Listando transações e seeds
 
