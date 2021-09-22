@@ -12,10 +12,10 @@ createServer ({
   seeds(server){ // Seed serve para popular a tabela e recebe server como parametro
     server.db.loadData({
       transactions: [ // Nome da tabela que é sempre o nome do model no plural
-        { id: 1, title: 'Compra de café', amount: '10.00', type: 'withdraw', category: 'Food', creatAt: new Date('2020-01-01') },
-        { id: 2, title: 'Compra de almoço', amount: '50.00', type: 'withdraw', category: 'Food', creatAt: new Date('2020-01-01') },
-        { id: 3, title: 'Salário', amount: '5000.00', type: 'deposit', category: 'Food', creatAt: new Date('2020-01-01') },
-        { id: 4, title: 'Compra de casa', amount: '10000.00', type: 'withdraw', category: 'Food', creatAt: new Date('2020-01-01') }
+        { id: 1, title: 'Compra de café', amount: '10.00', type: 'withdraw', category: 'Food', createdAt: new Date('2020-01-01') },
+        { id: 2, title: 'Compra de almoço', amount: '50.00', type: 'withdraw', category: 'Food', createdAt: new Date('2020-01-01') },
+        { id: 3, title: 'Salário', amount: '5000.00', type: 'deposit', category: 'Food', createdAt: new Date('2020-01-01') },
+        { id: 4, title: 'Compra de casa', amount: '10000.00', type: 'withdraw', category: 'Food', createdAt: new Date('2020-01-01') }
       ]
     })
   },
