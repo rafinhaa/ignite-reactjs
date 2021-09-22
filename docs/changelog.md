@@ -48,4 +48,4 @@
 - Terminado a aula 10 - Modal & Forms - Listando transações e seeds
 - Terminado a aula 11 - Modal & Forms - Formatando valores
 - Terminado a aula 01 - Contextos e hooks - Introdução à contextos
-
+- Terminado a aula 02 - Contextos e hooks - A Context API no React
