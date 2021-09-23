@@ -3,8 +3,8 @@ import { Container, RadioBox, TransactionTypeContainer } from './styles';
 import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
-import { FormEvent, useState } from 'react';
-import { api } from '../../services/api';
+import { FormEvent, useState, useContext } from 'react';
+import { TransactionsContext } from "../../TransactionsContext";
 
 interface NewTransactionModalProps {
     isOpen: boolean;
@@ -12,25 +12,18 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProps) {
+    const { createTransaction } = useContext(TransactionsContext);
     const [type, setType] = useState('deposit'); // Usando o useState para armazenar o tipo de transação
 
     const [title, setTitle] = useState('');
-    const [value, setValue] = useState(0);
+    const [amount, setAmount] = useState(0);
     const [category, setCategory] = useState('');
     
     //Toda vez que o form for submetido, o onSubmit será chamado
     // O onSubmit recebe como parâmetro o evento do form, que vem com as informações do form
     function handleCreateNewTransaction(event: FormEvent){
-        event.preventDefault();
-        //Salvando os dados do form na variável data
-        const data ={
-            title,
-            value,
-            category,
-            type,
-        };
-        //Fazendo a requisição para a API
-        api.post('transactions', data);
+        event.preventDefault();  
+        createTransaction({title,amount,category,type});     
     }
 
     return (
@@ -50,7 +43,7 @@ export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProp
                         onChange={ event => setTitle(event.target.value) } // Quando o usuário digitar algo, o onChange será chamado, onChange recebe o evento do input
                         placeholder="Título" 
                     />
-                    <input value={value} onChange={ event => setValue(event.target.valueAsNumber) } type='number' placeholder="Valor" />
+                    <input value={amount} onChange={ event => setAmount(event.target.valueAsNumber) } type='number' placeholder="Valor" />
                     <TransactionTypeContainer> 
                         <RadioBox onClick={() => {setType('deposit')}} 
                             isActive={type==='deposit'}
