@@ -7,7 +7,22 @@ import { TransactionsContext } from "../../TransactionsContext";
 
 export function Summary() {
 	const {transactions} = useContext(TransactionsContext); // Contexto de transações
-	console.log(transactions);
+
+	const summary = transactions.reduce( (acc, transaction) => {
+		if (transaction.type === "deposit") {
+			acc.deposits += Number(transaction.amount);
+			acc.total += Number(transaction.amount);
+		} else {
+			acc.withdraws += Number(transaction.amount);
+			acc.total -= Number(transaction.amount);
+		}	
+		return acc;
+	},{
+		// Inicializa o objeto com os valores padrões
+		deposits: 0,
+		withdraws: 0,
+		total: 0,
+	})
 
     return (
 		<Container>
@@ -17,21 +32,42 @@ export function Summary() {
 					<p>Entradas</p>
 					<img src={incomeImg} alt="Entradas" />
 				</header>
-				<strong>R$ 1000</strong>
+				<strong>
+					{
+						summary.deposits.toLocaleString('pt-BR', {
+							style: 'currency',
+							currency: 'BRL'
+						})
+					}
+				</strong>
 			</div>
 			<div>
 				<header> {/* Cabeçalho da box */}
 					<p>Saídas</p>
 					<img src={outcomeImg} alt="Saídas" />
 				</header>
-				<strong> - R$ 5000</strong>
+				<strong>
+					{
+						summary.withdraws.toLocaleString('pt-BR', {
+							style: 'currency',
+							currency: 'BRL'
+						})
+					}	
+				</strong>
 			</div>
 			<div className="highlight-background">
 				<header> {/* Cabeçalho da box */}
 					<p>Total</p>
 					<img src={totalImg} alt="Total" />
 				</header>
-				<strong>R$ 500</strong>
+				<strong>
+					{
+						summary.total.toLocaleString('pt-BR', {
+							style: 'currency',
+							currency: 'BRL'
+						})
+					}
+				</strong>
 			</div>
 
 		</Container>

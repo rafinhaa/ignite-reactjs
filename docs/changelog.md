@@ -54,3 +54,4 @@
 - Terminado a aula 04 - Contextos e hooks - Movendo criação para o context
 ##### 24/09/2021
 - Terminado a aula 05 - Contextos e hooks - Finalizando a inserção
+- Terminado a aula 06 - Contextos e hooks - Calculando o Resumo
