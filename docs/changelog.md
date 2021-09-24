@@ -55,3 +55,4 @@
 ##### 24/09/2021
 - Terminado a aula 05 - Contextos e hooks - Finalizando a inserção
 - Terminado a aula 06 - Contextos e hooks - Calculando o Resumo
+- Terminado a aula 07 - Contextos e hooks - Criando hook

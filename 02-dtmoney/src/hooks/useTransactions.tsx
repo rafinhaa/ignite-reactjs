@@ -1,5 +1,5 @@
-import { createContext, useEffect, useState } from "react";
-import { api } from "./services/api";
+import { createContext, useContext, useEffect, useState } from "react";
+import { api } from "../services/api";
 
 interface Transaction {
 	id: number,
@@ -21,7 +21,7 @@ interface TransactionsProviderProps {
     children: React.ReactNode // Aceita qualquer conteúdo dentro do componente (TAGS HTML)
 }
 
-export const TransactionsContext = createContext<TransactionsContextData>( // Tipo de informação que será passada para o contexto
+const TransactionsContext = createContext<TransactionsContextData>( // Tipo de informação que será passada para o contexto
     {} as TransactionsContextData // Forçando o tipo de informação que será passada para o contexto
 );
 
@@ -50,3 +50,9 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
         </TransactionsContext.Provider>
     );
 } 
+
+export function useTransactions() {
+	const context = useContext(TransactionsContext); // Pegando o contexto
+
+	return context; // Retornando o contexto
+}
