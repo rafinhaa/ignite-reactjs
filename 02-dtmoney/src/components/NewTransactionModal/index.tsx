@@ -21,9 +21,18 @@ export function NewTransactionModal({ isOpen, onClose }: NewTransactionModalProp
     
     //Toda vez que o form for submetido, o onSubmit será chamado
     // O onSubmit recebe como parâmetro o evento do form, que vem com as informações do form
-    function handleCreateNewTransaction(event: FormEvent){
-        event.preventDefault();  
-        createTransaction({title,amount,category,type});     
+    async function handleCreateNewTransaction(event: FormEvent){
+        event.preventDefault(); 
+        // Aguarda a criação da transação
+        await createTransaction({title,amount,category,type}); // Aguarda a criação da transação
+
+        // Limpa os campos do form
+        setTitle('');
+        setAmount(0);
+        setCategory('');       
+        setType('deposit');
+
+        onClose(); // Fecha o modal só se a criação for bem sucedida        
     }
 
     return (

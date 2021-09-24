@@ -50,5 +50,7 @@
 - Terminado a aula 01 - Contextos e hooks - Introdução à contextos
 - Terminado a aula 02 - Contextos e hooks - A Context API no React
 ##### 23/09/2021
-- Terminado a aula 03- Contextos e hooks - Carregando transações
-- Terminado a aula 04- Contextos e hooks - Movendo criação para o context
+- Terminado a aula 03 - Contextos e hooks - Carregando transações
+- Terminado a aula 04 - Contextos e hooks - Movendo criação para o context
+##### 24/09/2021
+- Terminado a aula 05 - Contextos e hooks - Finalizando a inserção

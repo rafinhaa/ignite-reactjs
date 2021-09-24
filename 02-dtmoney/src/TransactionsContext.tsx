@@ -12,7 +12,7 @@ interface Transaction {
 
 interface TransactionsContextData {
 	transactions: Transaction[], // Lista de transações
-	createTransaction: (transaction: TransactionInput) => void, // Função para criar uma transação
+	createTransaction: (transaction: TransactionInput) => Promise<void>, // Função para criar uma transação que retorna uma promise de void
 }
 
 type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>; // Herda todas as propriedades de Transaction, exceto id e createdAt
@@ -28,10 +28,16 @@ export const TransactionsContext = createContext<TransactionsContextData>( // Ti
 export function TransactionsProvider({ children }: TransactionsProviderProps) {
     const [transactions, setTransactions] = useState<Transaction[]>([]);
 	
-	function createTransaction(transaction: TransactionInput) {	// Função para criar uma nova transação que será do tipo TransactionInput	
+	// Função assincrona que retorna por pradrão uma Promise
+	async function createTransaction(transactionInput: TransactionInput) {	// Função para criar uma nova transação que será do tipo TransactionInput	
 		//Fazendo a requisição para a API
-		api.post('transactions', transaction);
-}
+		const response = await api.post('transactions', {
+			...transactionInput,
+			createdAt: new Date(), // Adicionando a data atual
+		}); // Aguarda a resposta da API e armazena na variável response
+		const { transaction } = response.data; // Armazena o objeto transaction que foi retornado pela API
+		setTransactions([...transactions, transaction]); // Atualiza a lista de transações
+	}
 
 	useEffect(() => {
 		api.get('transactions')		
