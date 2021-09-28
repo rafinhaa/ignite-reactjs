@@ -22,11 +22,16 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 - [Projetos](#-projetos)
   - [Chapter I](#chapter-i)
     - [Github Explorer](#github-explorer)
+  - [Chapter II](#chapter-ii)
+    - [DT Money](#dt-money)
     
 
 - [Desafios](#-desafios)
-  - [Chapter I](#one-chapter-i)
+  - [Chapter I](#chapter-i)
+    - [To.do](#to.do)
     - [Watchme](#github-explorer)
+  - [Chapter II](#chapter-ii)
+    - [Rocketshoes](#rocketshoes)
 
 ## 🚀 Projetos
 ### Chapter I
@@ -35,6 +40,15 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 <p align="center">
   <a href="https://github.com/rafinhaa/ignite-reactjs/tree/main/01-github-explorer">
      <img src="docs/images/logos/github-explorer.svg" alt="Github Explorer" width="280"/>
+   </a>
+</p>
+
+### Chapter II
+#### DT Money
+
+<p align="center">
+  <a href="https://github.com/rafinhaa/ignite-reactjs/tree/main/01-github-explorer">
+     <img src="docs/images/logos/dt-money.svg" alt="dt money" width="280"/>
    </a>
 </p>
 
@@ -51,9 +65,16 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
    </a>
 </p>
 
+### Chapter II
+<p align="center">
+  <a href="https://github.com/rafinhaa/ignite-reactjs-desafio-03">
+     <img src="docs/images/logos/desafio-rocketshoes.svg" alt="rocketshoes" width="280"/>
+   </a>
+</p>
+
 ## 🚀 Technologies
 
-- [ReatJS](https://pt-br.reactjs.org/)
+- [ReactJS](https://pt-br.reactjs.org/)
 
 ## ℹ️ Info
 

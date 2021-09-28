@@ -7,8 +7,10 @@ services:
     working_dir: /srv/meu-app
     environment:
       - NODE_ENV=development
+      - PORT=3000  
     volumes:
-      - ./02-dtmoney:/srv/meu-app
+      - ./ignite-reactjs-desafio-03:/srv/meu-app
     ports:
       - 3000:3000
+      - 3333:3333
     command: "yarn start"
