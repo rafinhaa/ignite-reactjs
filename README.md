@@ -28,10 +28,10 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 
 - [Desafios](#-desafios)
   - [Chapter I](#chapter-i-1)
-    - [To.do](#ignite-reactjs-desafio-03)
-    - [Watchme](#ignite-reactjs-desafio-03)
+    - [To.do](#chapter-i-1)
+    - [Watchme](#chapter-i-1)
   - [Chapter II](#chapter-ii-1)
-    - [Rocketshoes](#ignite-reactjs-desafio-03)
+    - [Rocketshoes](#chapter-ii-1)
 
 ## 🚀 Projetos
 ### Chapter I
