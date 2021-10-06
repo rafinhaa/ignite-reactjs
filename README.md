@@ -32,6 +32,7 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
     - [Watchme](#chapter-i-1)
   - [Chapter II](#chapter-ii-1)
     - [Rocketshoes](#chapter-ii-1)
+    - [GoRestaurant](#chapter-ii-2)
 
 ## 🚀 Projetos
 ### Chapter I
@@ -69,6 +70,11 @@ Repositório onde se encontra todos os projetos desenvolvidos na trilha de React
 <p align="center">
   <a href="https://github.com/rafinhaa/ignite-reactjs-desafio-03">
      <img src="docs/images/logos/desafio-rocketshoes.svg" alt="rocketshoes" width="280"/>
+   </a>
+</p>
+<p align="center">
+  <a href="https://github.com/rafinhaa/ignite-reactjs-desafio-04">
+     <img src="docs/images/logos/desafio-gorestaurant.svg" alt="gorestaurant" width="280"/>
    </a>
 </p>
 
